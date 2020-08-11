@@ -527,9 +527,7 @@ template {
 }
 
 .hero__title {
-  font-family: HK Grotesk Regular;
-  font-style: normal;
-  font-weight: bold;
+  font-family: HKGrotesk-Bold;
   font-size: 56px;
   line-height: 68px;
   margin: 0 0 20px 0;
@@ -553,6 +551,7 @@ template {
 }
 
 .hero__advantages {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
