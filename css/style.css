@@ -1,4 +1,3 @@
-/** $grey: #BDBDBD **/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,6 +25,13 @@ img {
 
 .button {
   cursor: pointer;
+}
+
+.hashtag {
+  color: #36B37E;
+  background-color: rgba(54, 179, 126, 0.1);
+  border-radius: 2000px;
+  padding: 6px 16px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -443,5 +449,150 @@ template {
   border-radius: 8px;
   max-height: 48px;
   padding: 10px 23px;
+}
+
+.hero {
+  padding-bottom: 120px;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 1280px;
+  max-height: 700px;
+  background-color: #E8EAE9;
+  border-radius: 8px;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero__container:before {
+  content: '';
+  position: absolute;
+  width: 988px;
+  height: 1500px;
+  left: 31.2%;
+  right: 0;
+  top: -49%;
+  bottom: 0;
+  background-image: url(../img/hero/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 109%;
+  z-index: -3;
+}
+
+.hero__container:after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  left: 0;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(238, 238, 238, 1e-05)), color-stop(30%, #E8EAE9));
+  background: linear-gradient(270deg, rgba(238, 238, 238, 1e-05) 0%, #E8EAE9 30%);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  padding: 62px 0 46px 107px;
+}
+
+.hero__info_hashtag {
+  min-width: 100px;
+  height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+  margin-bottom: 34px;
+}
+
+.hero__title {
+  font-family: HK Grotesk Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  margin: 0 0 20px 0;
+}
+
+.hero__description {
+  margin-bottom: 52px;
+}
+
+.hero__button {
+  color: #ffffff;
+  background: #183B56;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25p;
+  border-radius: 8px;
+  margin-bottom: 48px;
+  padding: 16px 24px;
+  border: none;
+}
+
+.hero__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__advantages_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__advantages_item_image {
+  border: 0.75px solid #1565D8;
+  border-radius: 12px;
+  margin-right: 5px;
+  padding: 9px;
+}
+
+.hero__advantages_item_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
 }
 /*# sourceMappingURL=style.css.map */

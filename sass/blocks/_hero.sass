@@ -1,0 +1,95 @@
+.hero
+  padding-bottom: 120px
+  &__container
+    position: relative
+    max-width: 1280px
+    max-height: 700px
+    background-color: $grey
+    border-radius: 8px
+    margin: auto
+    overflow: hidden
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      width: 988px
+      height: 1500px
+      left: 31.2%
+      right: 0
+      top: -49%
+      bottom: 0
+      background-image: url(../img/hero/hero-image.png)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 109%
+      z-index: -3
+    &:after
+      content: ''
+      position: absolute
+      width: 600px
+      height: 700px
+      left: 0
+      right: -100%
+      top: 0
+      bottom: 0
+      background: linear-gradient(270deg, rgba(238, 238, 238, 0.00001) 0%, #E8EAE9 30%)
+      background-repeat: no-repeat
+      background-position: center
+      z-index: -1
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    width: 50%
+    padding: 62px 0 46px 107px
+    &_hashtag
+      min-width: 100px
+      height: 32px
+      text-decoration: none
+      text-transform: uppercase
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      padding: 6px 16px
+      margin-bottom: 34px
+  &__title
+    font-family: HK Grotesk Regular
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    margin: 0 0 20px 0
+  &__description
+    margin-bottom: 52px
+  &__button
+    color: $light
+    background: $dark
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25p
+    border-radius: 8px
+    margin-bottom: 48px
+    padding: 16px 24px
+    border: none
+  &__advantages
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    &_item
+      display: flex
+      flex-direction: row
+      align-items: center
+      &_image
+        border: 0.75px solid $primary-color
+        border-radius: 12px
+        margin-right: 5px
+        padding: 9px
+      &_text
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: 0.2px
