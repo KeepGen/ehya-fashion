@@ -883,6 +883,7 @@ template {
 }
 
 .trending__goods_card_wrapper_bg {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,6 +902,18 @@ template {
   color: #ffffff;
   background-color: #1565D8;
   padding: 125px 21px 104px 21px;
+  z-index: 1;
+}
+
+.trending__goods_card_wrapper_bg:after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/trending/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
 }
 
 .trending__goods_card_wrapper_image {
@@ -920,6 +933,8 @@ template {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.2px;
+  text-decoration: none;
+  color: #ffffff;
   text-align: center;
 }
 
