@@ -27,17 +27,16 @@
     display: flex
     align-items: center
     align-content: center
+    justify-content: flex-end
     font-size: 18px
     line-height: 25px
     font-weight: 400
     color: $text-color-light
-    margin-left: 30px
     &_active
       font-size: 18px
       line-height: 25px
       font-weight: 700
       color: $dark
-      margin-left: 35px
   &__goods
     display: flex
     flex-direction: row
@@ -127,4 +126,20 @@
       min-height: 927px
       display: flex
       justify-content: space-between
-      
+  &__content
+    display: none
+    &_active
+      display: block
+.tabs
+  display: grid
+  align-self: center
+  grid-template-columns: repeat(3, minmax(129px, 1fr))
+  grid-template-rows: 17px
+  list-style-type: none
+  margin: 0 2px 0 0
+.content
+  list-style-type: none
+  min-height: 982px
+  overflow: hidden
+  padding: 0
+  margin: 0

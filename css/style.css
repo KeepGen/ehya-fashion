@@ -798,11 +798,13 @@ template {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   color: #5A7184;
-  margin-left: 30px;
 }
 
 .trending__tabs_active {
@@ -810,7 +812,6 @@ template {
   line-height: 25px;
   font-weight: 700;
   color: #183B56;
-  margin-left: 35px;
 }
 
 .trending__goods {
@@ -961,6 +962,35 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.trending__content {
+  display: none;
+}
+
+.trending__content_active {
+  display: block;
+}
+
+.tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-columns: (minmax(129px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(129px, 1fr));
+  -ms-grid-rows: 17px;
+      grid-template-rows: 17px;
+  list-style-type: none;
+  margin: 0 2px 0 0;
+}
+
+.content {
+  list-style-type: none;
+  min-height: 982px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .testimonials {
