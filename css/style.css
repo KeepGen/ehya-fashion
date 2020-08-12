@@ -967,18 +967,7 @@ template {
 }
 
 .testimonials__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 800px;
-  margin: auto;
 }
 
 .testimonials__icon {
@@ -1011,7 +1000,27 @@ template {
   margin-bottom: 48px;
 }
 
-.swiper-pagination {
-  color: #183B56;
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #183B56;
+  width: 5px;
+  height: 5px;
 }
 /*# sourceMappingURL=style.css.map */

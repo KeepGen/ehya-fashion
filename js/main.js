@@ -12,8 +12,6 @@ $(document).ready(function () {
     },
   });
 
-
-
   var mySwiper = document.querySelector('.swiper-container').swiper
   $(".swiper-container").mouseenter(function () {
     mySwiper.autoplay.stop();
