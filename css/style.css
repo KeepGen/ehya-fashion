@@ -592,7 +592,7 @@ template {
 }
 
 .hero__advantages_item_image {
-  border: 0.75px solid #1565D8;
+  border: 0.75px solid rgba(21, 101, 216, 0.5);
   border-radius: 12px;
   margin-right: 6px;
   padding: 7px;
