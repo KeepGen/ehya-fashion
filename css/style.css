@@ -556,6 +556,7 @@ template {
   border-radius: 8px;
   margin-bottom: 48px;
   padding: 16px 40px;
+  text-decoration: none;
   border: none;
 }
 
