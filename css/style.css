@@ -1010,4 +1010,8 @@ template {
   letter-spacing: 0.2px;
   margin-bottom: 48px;
 }
+
+.swiper-pagination {
+  color: #183B56;
+}
 /*# sourceMappingURL=style.css.map */
