@@ -1,0 +1,114 @@
+.trending
+  padding-bottom: 150px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    min-height: 1040px
+  &__texts
+    &_group
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+    &_tabs
+      display: flex
+      flex-direction: row
+      align-content: center
+      justify-content: space-between
+      min-width: 402px
+      margin-right: 2px
+    &_title
+      font-family: HKGrotesk-Bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.4px
+      margin: 3px 0 0 0
+  &__tabs
+    display: flex
+    align-items: center
+    align-content: center
+    font-size: 18px
+    line-height: 25px
+    font-weight: 400
+    color: $text-color-light
+    margin-left: 30px
+    &_active
+      font-size: 18px
+      line-height: 25px
+      font-weight: 700
+      color: $dark
+      margin-left: 35px
+  &__goods
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-top: 46px
+    padding: 0 5px
+    &_card
+      max-height: 441px
+      margin-bottom: 50px
+      &_details
+        padding: 20px 10px 10px 10px
+        &_group
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+        &_price
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 36px
+          color: $text-color-light
+          margin-left: 3px
+        &_title
+          font-family: HKGrotesk-Bold
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 32px
+          letter-spacing: 0.2px
+          margin: 0 0 4px 0
+        &_cart
+          width: 23px
+          height: 23px
+      &_wrapper
+        width: 260px
+        height: 350px
+        border-radius: 8px
+        overflow: hidden
+        &_bg
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: space-between
+          width: 100%
+          height: 100%
+          color: $light
+          background-color: $primary-color
+          padding: 125px 21px 104px 21px
+        &_image
+          width: 100%
+          height: 100%
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          object-fit: cover
+        &_text
+          font-family: HKGrotesk-Bold
+          font-style: normal
+          font-size: 24px
+          line-height: 32px
+          letter-spacing: 0.2px
+          text-align: center
+        &_icon
+          margin-bottom: 18px
+          &_image
+            width: 27px
+            height: 27px
+    &_group
+      min-height: 927px
+      display: flex
+      justify-content: space-between
+      

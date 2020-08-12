@@ -728,4 +728,214 @@ template {
   line-height: 36px;
   margin-bottom: 39px;
 }
+
+.trending {
+  padding-bottom: 150px;
+}
+
+.trending__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 1040px;
+}
+
+.trending__texts_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trending__texts_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 402px;
+  margin-right: 2px;
+}
+
+.trending__texts_title {
+  font-family: HKGrotesk-Bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.4px;
+  margin: 3px 0 0 0;
+}
+
+.trending__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #5A7184;
+  margin-left: 30px;
+}
+
+.trending__tabs_active {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #183B56;
+  margin-left: 35px;
+}
+
+.trending__goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 46px;
+  padding: 0 5px;
+}
+
+.trending__goods_card {
+  max-height: 441px;
+  margin-bottom: 50px;
+}
+
+.trending__goods_card_details {
+  padding: 20px 10px 10px 10px;
+}
+
+.trending__goods_card_details_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trending__goods_card_details_price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+  margin-left: 3px;
+}
+
+.trending__goods_card_details_title {
+  font-family: HKGrotesk-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 0;
+}
+
+.trending__goods_card_details_cart {
+  width: 23px;
+  height: 23px;
+}
+
+.trending__goods_card_wrapper {
+  width: 260px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.trending__goods_card_wrapper_bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #1565D8;
+  padding: 125px 21px 104px 21px;
+}
+
+.trending__goods_card_wrapper_image {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trending__goods_card_wrapper_text {
+  font-family: HKGrotesk-Bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.trending__goods_card_wrapper_icon {
+  margin-bottom: 18px;
+}
+
+.trending__goods_card_wrapper_icon_image {
+  width: 27px;
+  height: 27px;
+}
+
+.trending__goods_group {
+  min-height: 927px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
