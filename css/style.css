@@ -1054,4 +1054,11 @@ template {
   width: 5px;
   height: 5px;
 }
+
+.separator {
+  display: inline-block;
+  width: 1140px;
+  height: 1px;
+  background-color: #E8EAE9;
+}
 /*# sourceMappingURL=style.css.map */
