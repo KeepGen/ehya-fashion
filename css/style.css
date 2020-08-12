@@ -435,20 +435,22 @@ template {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
 }
 
-.navbar__menu_button {
+.navbar__menu_link_button {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
+  text-decoration: none;
   border: 2px solid #1565D8;
+  cursor: pointer;
+  max-height: 48px;
+  padding: 10px 23px;
   color: #1565D8;
   background-color: #ffffff;
   border-radius: 8px;
-  max-height: 48px;
-  padding: 10px 23px;
 }
 
 .hero {
@@ -918,6 +920,11 @@ template {
   line-height: 32px;
   letter-spacing: 0.2px;
   text-align: center;
+}
+
+.trending__goods_card_wrapper_link {
+  /** display: block **/
+  /** height: 100% **/
 }
 
 .trending__goods_card_wrapper_icon {
