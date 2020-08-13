@@ -1062,4 +1062,10 @@ template {
   background-color: #E8EAE9;
   margin: 0 auto 120px auto;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
