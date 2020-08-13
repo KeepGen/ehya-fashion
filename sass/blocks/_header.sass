@@ -6,14 +6,21 @@
     justify-content: space-between
     padding-top: 22px
     padding-bottom: 58px
-    &_desktop
-      /** min-width: 570px **/
-      width: 80%
+    &_group
+      width: 100%
       display: flex
       align-items: center
       justify-content: flex-end
+      &_ul
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &_logo
+      width: 90px
+      height: 30px
+    &_toggle
+      display: none
     &_list
-      min-width: 397px
       display: flex
       flex-direction: row
       align-items: center
@@ -41,4 +48,8 @@
         color: $primary-color
         background-color: $light
         border-radius: 8px
-        
+    &_close
+      display: none
+.logo
+  &__image
+    min-width: 90px

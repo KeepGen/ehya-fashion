@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 });
 
-
+// Переключение табов
 $(document).ready(function () {
   var trendingTabs = $(".trending__tabs");
   var trendingContent = $(".trending__content");
@@ -34,5 +34,12 @@ $(document).ready(function () {
     $(activeContent).addClass("trending__content_active");
     $(this).addClass("trending__tabs_active");
   });
+});
 
+// Вызов мобильного меню
+$(document).ready(function () {
+  var menuButton = $('.navbar__button');
+  menuButton.on('click', function () {
+    $(".navbar__menu_group").toggleClass('navbar__menu_group_visible');
+  });
 });

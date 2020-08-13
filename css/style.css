@@ -395,9 +395,8 @@ template {
   padding-bottom: 58px;
 }
 
-.navbar__menu_desktop {
-  /** min-width: 570px **/
-  width: 80%;
+.navbar__menu_group {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,8 +408,28 @@ template {
           justify-content: flex-end;
 }
 
+.navbar__menu_group_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar__menu_logo {
+  width: 90px;
+  height: 30px;
+}
+
+.navbar__menu_toggle {
+  display: none;
+}
+
 .navbar__menu_list {
-  min-width: 397px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,6 +470,14 @@ template {
   color: #1565D8;
   background-color: #ffffff;
   border-radius: 8px;
+}
+
+.navbar__menu_close {
+  display: none;
+}
+
+.logo__image {
+  min-width: 90px;
 }
 
 .hero {
@@ -1063,9 +1090,142 @@ template {
   margin: 0 auto 120px auto;
 }
 
+@media (max-width: 1320px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 102px;
+  }
+  .container {
+    max-width: 728px;
+  }
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 48px;
+  }
+  .navbar__menu_fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .navbar__menu_group {
+    display: none;
+    padding: 12px 16px 36px 24px;
+    margin: 0;
+  }
+  .navbar__menu_group_ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 100%;
+  }
+  .navbar__menu_group_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: fixed;
+    top: 10px;
+    right: 8px;
+    width: 304px;
+    min-height: 324px;
+    background-color: #ffffff;
+  }
+  .navbar__menu_close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+  }
+  .navbar__menu_toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__menu_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin: 0;
+  }
+  .navbar__menu_item {
+    margin-bottom: 20px;
+  }
+  .navbar__menu_link_button {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__button {
+    width: 16px;
+    height: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .navbar__button_line {
+    width: 16px;
+    height: 1px;
+    background-color: #3A4C66;
   }
 }
 /*# sourceMappingURL=style.css.map */
