@@ -418,6 +418,7 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
 }
 
 .navbar__menu_logo {
@@ -455,6 +456,7 @@ template {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  margin-left: 43px;
 }
 
 .navbar__menu_link_button {
@@ -1197,6 +1199,9 @@ template {
   }
   .navbar__menu_item {
     margin-bottom: 20px;
+  }
+  .navbar__menu_link {
+    margin: 0;
   }
   .navbar__menu_link_button {
     width: 100%;

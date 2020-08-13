@@ -1,3 +1,4 @@
+// Слайдер отзывов
 $(document).ready(function () {
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -22,6 +23,8 @@ $(document).ready(function () {
   });
 });
 
+
+
 // Переключение табов
 $(document).ready(function () {
   var trendingTabs = $(".trending__tabs");
@@ -36,10 +39,29 @@ $(document).ready(function () {
   });
 });
 
+
+
 // Вызов мобильного меню
 $(document).ready(function () {
   var menuButton = $('.navbar__button');
   menuButton.on('click', function () {
     $(".navbar__menu_group").toggleClass('navbar__menu_group_visible');
   });
+});
+
+// Закрытие мобильного меню через X
+$(document).ready(function () {
+  var menuButton = $('.navbar__menu_close');
+  menuButton.on('click', function () {
+    $(".navbar__menu_group").toggleClass('navbar__menu_group_visible');
+  });
+});
+
+// Закрытие мобильного меню через Esc
+$(document).keyup(function (e) {
+  if ("Escape" === e.key || 27 === e.keyCode) {
+    event.preventDefault();
+    var o = $(".navbar__menu_group");
+    o.removeClass("navbar__menu_group_visible")
+  }
 });
