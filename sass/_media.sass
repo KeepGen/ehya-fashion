@@ -175,10 +175,18 @@
             font-size: 20px
         &_wrapper
           width: 100%
+          &_bg
+            &:hover
+              background-color: $primary-color
         &_details
           width: 100%
     &__tabs
       justify-content: center
+      &:hover
+        font-size: 18px
+        line-height: 25px
+        font-weight: 400
+        color: $text-color-light
 
 @media (max-width: 870px)
   .hero
@@ -499,8 +507,14 @@
         margin-bottom: 24px
     &__tabs
       font-size: 16px
+      &:hover
+        font-size: 16px
       &_active
         font-size: 16px
+        &:hover
+          font-size: 16px
+          font-weight: 700
+          color: $dark
   .tabs
     margin: 0
   .testimonials

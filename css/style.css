@@ -873,6 +873,17 @@ template {
   color: #5A7184;
 }
 
+.trending__tabs_item {
+  min-width: 129px;
+}
+
+.trending__tabs:hover {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #183B56;
+}
+
 .trending__tabs_active {
   font-size: 18px;
   line-height: 25px;
@@ -989,6 +1000,10 @@ template {
   z-index: 2;
 }
 
+.trending__goods_card_wrapper_bg:hover {
+  background-color: #6fa1e9;
+}
+
 .trending__goods_card_wrapper_image {
   width: 100%;
   height: 100%;
@@ -1044,14 +1059,19 @@ template {
 }
 
 .tabs {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-columns: (minmax(129px, 1fr))[3];
-      grid-template-columns: repeat(3, minmax(129px, 1fr));
-  -ms-grid-rows: 17px;
-      grid-template-rows: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style-type: none;
   margin: 0 2px 0 0;
 }
@@ -1062,6 +1082,24 @@ template {
   overflow: hidden;
   padding: 0;
   margin: 0;
+}
+
+.un {
+  display: inline-block;
+}
+
+.un::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.un:hover::after {
+  width: 100%;
 }
 
 .testimonials {
@@ -1384,6 +1422,9 @@ template {
   .trending__goods_card_wrapper {
     width: 100%;
   }
+  .trending__goods_card_wrapper_bg:hover {
+    background-color: #1565D8;
+  }
   .trending__goods_card_details {
     width: 100%;
   }
@@ -1391,6 +1432,12 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .trending__tabs:hover {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #5A7184;
   }
 }
 
@@ -1845,8 +1892,16 @@ template {
   .trending__tabs {
     font-size: 16px;
   }
+  .trending__tabs:hover {
+    font-size: 16px;
+  }
   .trending__tabs_active {
     font-size: 16px;
+  }
+  .trending__tabs_active:hover {
+    font-size: 16px;
+    font-weight: 700;
+    color: #183B56;
   }
   .tabs {
     margin: 0;
