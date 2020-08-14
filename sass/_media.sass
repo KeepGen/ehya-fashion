@@ -216,8 +216,8 @@
           flex-direction: column
           align-items: flex-start
           position: fixed
-          top: 10px
-          right: 8px
+          top: 14px
+          right: 5.5%
           width: 304px
           min-height: 324px
           background-color: $light
@@ -291,12 +291,22 @@
     &__author
       margin-bottom: 36px
 
+@media (max-width: 748px)
+  .navbar
+    &__menu
+      &_group
+        &_visible
+          right: 4.5%
+
 @media (max-width: 728px)
   body
     padding-top: 88px
   .navbar
     &__menu
       padding-bottom: 22px
+      &_group
+        &_visible
+          right: 3%
   .hero
     &__wrapper
       width: 95%
@@ -418,6 +428,11 @@
           justify-content: center
 
 @media (max-width: 480px)
+  .navbar
+    &__menu
+      &_group
+        &_visible
+          right: 2.5%
   .hero
     &__wrapper
       &:before
@@ -481,6 +496,11 @@
       margin: 13px 0 24px 0
 
 @media (max-width: 410px)
+  .navbar
+    &__menu
+      &_group
+        &_visible
+          right: 2%
   .hero
     &__wrapper
       &:before
@@ -504,6 +524,11 @@
             padding-bottom: 60px
 
 @media (max-width: 360px)
+  .navbar
+    &__menu
+      &_group
+        &_visible
+          right: 1.5%
   .hero
     &__wrapper
       padding: 385px 20px 36px 20px
