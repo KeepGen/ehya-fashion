@@ -459,6 +459,10 @@ template {
   margin-left: 43px;
 }
 
+.navbar__menu_link:hover {
+  color: #1565D8;
+}
+
 .navbar__menu_link_button {
   font-style: normal;
   font-weight: bold;
@@ -472,6 +476,10 @@ template {
   color: #1565D8;
   background-color: #ffffff;
   border-radius: 8px;
+}
+
+.navbar__menu_link_button:hover {
+  background-color: #f5f9ff;
 }
 
 .navbar__menu_close {
