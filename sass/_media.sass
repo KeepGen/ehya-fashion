@@ -1,11 +1,58 @@
 @media (max-width: 1320px)
   .container
     max-width: 1100px
+  .navbar
+    &__menu
+      width: 972px
+      margin: auto
 
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .navbar
+    &__menu
+      width: 820px
+  .hero
+    &__info
+      max-width: 477px
+      &_hashtag
+        margin-bottom: 24px
+    &__wrapper
+      padding: 40px 0 40px 60px
+      &:before
+        transform: translate(20.1%, -25%)
+      &:after
+        width: 350px
+    &__description
+      font-size: 18px
+      margin-bottom: 46px
+    &__button
+      margin-bottom: 40px
 
+@media (max-width: 992px)
+  .container
+    max-width: 768px
+  .navbar
+    &__menu
+      width: 85%
+      &_link
+        margin-left: 30px
+  .hero
+    &__info
+      max-width: 100%
+    &__title
+      width: 458px
+      font-size: 48px
+      line-height: 65px
+    &__description
+      width: 458px
+    &__wrapper
+      &:before
+        transform: translate(2%, -25%)
+      &:after
+        width: 250px
+        height: 800px
+        right: -10%
 
 @media (max-width: 768px)
   body
@@ -14,6 +61,7 @@
     max-width: 728px
   .navbar
     &__menu
+      width: 89%
       display: flex
       align-items: center
       justify-content: space-between
@@ -64,8 +112,8 @@
           width: 100%
           text-align: center
     &__button
-      width: 16px
-      height: 11px
+      width: 22px
+      height: 18px
       display: flex
       align-items: center
       justify-content: space-between
@@ -74,6 +122,174 @@
       background-color: $light
       cursor: pointer
       &_line
-        width: 16px
-        height: 1px
+        width: 22px
+        height: 2.2px
         background-color: #3A4C66
+  .hero
+    &__wrapper
+      padding: 32px 0 36px 28px
+      &:before
+        transform: translate(1.7%, -24.9%)
+    &__info
+      max-width: 100%
+    &__title
+      width: 438px
+      font-size: 48px
+      line-height: 60px
+    &__description
+      width: 438px
+      line-height: 32px
+      margin-top: 16px
+      margin-bottom: 35px
+    &__advantages
+      &_item
+        margin-right: 21px
+
+@media (max-width: 728px)
+  body
+    padding-top: 88px
+  .navbar
+    &__menu
+      padding-bottom: 22px
+  .hero
+    &__wrapper
+      width: 95%
+      padding: 20px 0 20px 20px
+      &:before
+        transform: translate(-7%, -24.3%)
+    &__info
+      max-width: 427px
+    &__title
+      width: 325px
+      font-size: 38px
+      line-height: 60px
+    &__description
+      width: 335px
+      font-size: 16px
+      line-height: 32px
+      margin-top: 16px
+      margin-bottom: 35px
+    &__advantages
+      &_item
+        margin-right: 21px
+
+@media (max-width: 670px)
+  body
+    padding-top: 88px
+  .navbar
+    &__menu
+      padding-bottom: 22px
+  .hero
+    &__info
+      max-width: 100%
+      &_hashtag
+        min-width: 100px
+        margin-bottom: 30px
+    &__title
+      width: 330px
+      font-size: 35px
+      line-height: 50px
+    &__description
+      width: 330px
+      font-size: 16px
+      line-height: 32px
+      margin-top: 16px
+      margin-bottom: 35px
+    &__advantages
+      &_item
+        margin-right: 21px
+
+@media (max-width: 576px)
+  .navbar
+    &__menu
+      width: 89%
+  .hero
+    padding-bottom: 64px
+    &__container
+      max-height: 900px
+    &__wrapper
+      width: 100%
+      border-radius: 0px
+      padding: 385px 20px 36px 20px
+      &:before
+        transform: translate(-31%, -46.7%)
+      &:after
+        width: 570px
+        height: 500px
+        left: 0
+        right: 0
+        top: 50%
+        bottom: 0
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.00001) 0%, #E8EAE9 30%)
+        background-repeat: no-repeat
+        background-position: center
+    &__info
+      max-width: 100%
+      align-items: center
+      &_hashtag
+        min-width: 100px
+        height: 24px
+        padding: 2px 26px
+        margin-bottom: 20px
+    &__title
+      width: 100%
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+    &__description
+      width: 100%
+      font-size: 16px
+      line-height: 28px
+      margin-top: 20px
+      margin-bottom: 20px
+      text-align: center
+    &__button
+      font-size: 16px
+      line-height: 22px
+      padding: 13px 49px
+    &__advantages
+      justify-content: space-around
+      align-content: space-between
+      &_item
+        margin-right: 21px
+
+@media (max-width: 480px)
+  .hero
+    &__wrapper
+      &:before
+        transform: translate(-35%, -46.7%)
+
+@media (max-width: 410px)
+  .hero
+    &__wrapper
+      &:before
+        transform: translate(-39%, -46.7%)
+
+@media (max-width: 360px)
+  .hero
+    &__wrapper
+      padding: 385px 20px 36px 20px
+      &:before
+        transform: translate(-39.7%, -46.8%)
+    &__info
+      max-width: 100%
+      align-items: center
+      &_hashtag
+        margin-bottom: 22px
+    &__title
+      width: 273px
+    &__description
+      width: 280px
+      margin-top: 13px
+      margin-bottom: 23px
+      letter-spacing: 0px
+    &__advantages
+      height: 64px
+      &_item
+        margin-right: 0
+        &_image
+          border-radius: 10px
+          margin-right: 6px
+          padding: 3px
+    &__button
+      margin-bottom: 25px
