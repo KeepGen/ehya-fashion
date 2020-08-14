@@ -101,13 +101,18 @@
       width: 85%
       &_link
         margin-left: 30px
+        &_button
+          &:hover
+            background-color: $light
+        &:hover
+          color: $dark
   .hero
     &__info
       max-width: 100%
     &__title
       width: 458px
       font-size: 48px
-      line-height: 65px
+      line-height: 60px
     &__description
       width: 458px
     &__wrapper
@@ -117,6 +122,9 @@
         width: 250px
         height: 800px
         right: -10%
+    &__button
+      &:hover
+        background: $dark
   .collections
     &__wrapper
       width: 85%
@@ -171,6 +179,9 @@
       justify-content: center
 
 @media (max-width: 870px)
+  .hero
+    &__wrapper
+      width: 95%
   .trending
     &__goods
       &_card
@@ -318,7 +329,7 @@
     &__title
       width: 325px
       font-size: 38px
-      line-height: 60px
+      line-height: 50px
     &__description
       width: 335px
       font-size: 16px

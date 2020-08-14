@@ -601,6 +601,10 @@ template {
   border: none;
 }
 
+.hero__button:hover {
+  background: #355a77;
+}
+
 .hero__advantages {
   width: 100%;
   display: -webkit-box;
@@ -635,6 +639,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-right: 30px;
+  margin-bottom: 5px;
 }
 
 .hero__advantages_item_image {
@@ -1254,13 +1259,19 @@ template {
   .navbar__menu_link {
     margin-left: 30px;
   }
+  .navbar__menu_link_button:hover {
+    background-color: #ffffff;
+  }
+  .navbar__menu_link:hover {
+    color: #183B56;
+  }
   .hero__info {
     max-width: 100%;
   }
   .hero__title {
     width: 458px;
     font-size: 48px;
-    line-height: 65px;
+    line-height: 60px;
   }
   .hero__description {
     width: 458px;
@@ -1273,6 +1284,9 @@ template {
     width: 250px;
     height: 800px;
     right: -10%;
+  }
+  .hero__button:hover {
+    background: #183B56;
   }
   .collections__wrapper {
     width: 85%;
@@ -1359,6 +1373,9 @@ template {
 }
 
 @media (max-width: 870px) {
+  .hero__wrapper {
+    width: 95%;
+  }
   .trending__goods_card {
     width: 47%;
   }
@@ -1583,7 +1600,7 @@ template {
   .hero__title {
     width: 325px;
     font-size: 38px;
-    line-height: 60px;
+    line-height: 50px;
   }
   .hero__description {
     width: 335px;
