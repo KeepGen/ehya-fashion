@@ -642,7 +642,6 @@ template {
 
 .collections {
   padding-bottom: 145px;
-  margin-right: 23px;
 }
 
 .collections__wrapper {
@@ -1103,6 +1102,25 @@ template {
     width: 972px;
     margin: auto;
   }
+  .collections__wrapper {
+    width: 972px;
+    margin: auto;
+  }
+  .collections__images {
+    width: 600px;
+    margin-left: 0;
+  }
+  .collections__images_group {
+    width: 290px;
+    height: 230px;
+  }
+  .collections__images_group_hero {
+    width: 290px;
+    height: 490px;
+  }
+  .collections__content {
+    width: 350px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1135,6 +1153,49 @@ template {
   .hero__button {
     margin-bottom: 40px;
   }
+  .collections__wrapper {
+    width: 820px;
+  }
+  .collections__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: space-evenly;
+        align-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 500px;
+    height: 400px;
+  }
+  .collections__images_group {
+    width: 220px;
+    height: 190px;
+  }
+  .collections__images_group_hero {
+    width: 220px;
+    height: 400px;
+  }
+  .collections__content {
+    width: 350px;
+  }
+  .collections__title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .collections__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1166,6 +1227,42 @@ template {
     width: 250px;
     height: 800px;
     right: -10%;
+  }
+  .collections__wrapper {
+    width: 85%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collections__images {
+    width: 100%;
+    height: 490px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .collections__images_group {
+    width: 48%;
+    height: 48%;
+  }
+  .collections__images_group_hero {
+    width: 48%;
+    height: 490px;
+  }
+  .collections__content {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .collections__title {
+    font-size: 48px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .collections__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1297,6 +1394,9 @@ template {
     width: 22px;
     height: 2.2px;
     background-color: #3A4C66;
+  }
+  .hero {
+    padding-bottom: 80px;
   }
   .hero__wrapper {
     padding: 32px 0 36px 28px;
@@ -1461,12 +1561,62 @@ template {
   .hero__advantages_item {
     margin-right: 21px;
   }
+  .collections__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 575px;
+  }
+  .collections__images_group {
+    width: 48%;
+    height: 150px;
+  }
+  .collections__images_group_hero {
+    width: 100%;
+    height: 400px;
+  }
+  .collections__content {
+    text-align: center;
+  }
+  .collections__title {
+    font-size: 38px;
+  }
+  .collections__wrapper_link_item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
   .hero__wrapper:before {
     -webkit-transform: translate(-35%, -46.7%);
             transform: translate(-35%, -46.7%);
+  }
+  .collections__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 415px;
+  }
+  .collections__images_group {
+    width: 48%;
+    height: 100px;
+  }
+  .collections__images_group_hero {
+    width: 100%;
+    height: 300px;
+  }
+  .collections__title {
+    font-size: 28px;
+  }
+  .collections__description {
+    font-size: 16px;
+  }
+  .collections__wrapper_link_text {
+    font-size: 16px;
   }
 }
 
