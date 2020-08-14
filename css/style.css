@@ -1728,11 +1728,7 @@ template {
     max-height: 441px;
     margin-bottom: 20px;
   }
-  .trending__goods_card_wrapper_bg {
-    padding-top: 40px;
-    padding-bottom: 29px;
-  }
-  .trending__goods_card_wrapper_text {
+  .trending__goods_card_text {
     font-size: 20px;
     line-height: 24px;
   }
@@ -1793,6 +1789,10 @@ template {
   .trending__goods_card_wrapper {
     height: 250px;
   }
+  .trending__goods_card_wrapper_bg {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1840,6 +1840,10 @@ template {
   }
   .trending__goods_card_wrapper {
     height: 170px;
+  }
+  .trending__goods_card_wrapper_bg {
+    padding-top: 40px;
+    padding-bottom: 29px;
   }
 }
 /*# sourceMappingURL=style.css.map */
