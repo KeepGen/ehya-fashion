@@ -675,6 +675,18 @@ template {
           justify-content: space-between;
 }
 
+.collections__wrapper_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .collections__wrapper_link_text {
   font-style: normal;
   font-weight: bold;
@@ -699,6 +711,11 @@ template {
       -ms-flex-pack: start;
           justify-content: flex-start;
   text-decoration: none;
+}
+
+.collections__wrapper_link_item:hover {
+  text-decoration: underline;
+  color: #1565D8;
 }
 
 .collections__wrapper_link_icon {
@@ -1125,7 +1142,7 @@ template {
     width: 972px;
     margin: auto;
   }
-  .collections__wrapper {
+  .collections {
     width: 972px;
     margin: auto;
   }
@@ -1189,7 +1206,7 @@ template {
   .hero__button {
     margin-bottom: 40px;
   }
-  .collections__wrapper {
+  .collections {
     width: 820px;
   }
   .collections__images {
@@ -1288,12 +1305,17 @@ template {
   .hero__button:hover {
     background: #183B56;
   }
+  .collections {
+    width: 90%;
+  }
   .collections__wrapper {
-    width: 85%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .collections__wrapper_link_item:hover {
+    text-decoration: none;
   }
   .collections__images {
     width: 100%;
@@ -1737,6 +1759,11 @@ template {
   .collections__title {
     font-size: 38px;
   }
+  .collections__wrapper_link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .collections__wrapper_link_item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1905,7 +1932,7 @@ template {
     margin-bottom: 25px;
   }
   .collections__title {
-    font-size: 26px;
+    font-size: 25px;
   }
   .trending__goods_card_wrapper {
     height: 170px;
