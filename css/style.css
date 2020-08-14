@@ -1355,6 +1355,10 @@ template {
   .trending__goods_card_details {
     width: 100%;
   }
+  .testimonials {
+    width: 89%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1516,6 +1520,9 @@ template {
   .collections {
     padding-bottom: 80px;
   }
+  .trending {
+    padding-bottom: 80px;
+  }
   .trending__goods_card {
     width: 47%;
   }
@@ -1524,6 +1531,12 @@ template {
   }
   .trending__goods_card_details {
     width: 100%;
+  }
+  .testimonials__text {
+    margin: 12px 0 36px 0;
+  }
+  .testimonials__author {
+    margin-bottom: 36px;
   }
 }
 
@@ -1721,6 +1734,9 @@ template {
   .collections__wrapper_link_text {
     font-size: 16px;
   }
+  .trending {
+    padding-bottom: 48px;
+  }
   .trending__goods {
     margin-top: 36px;
   }
@@ -1765,6 +1781,11 @@ template {
   }
   .tabs {
     margin: 0;
+  }
+  .testimonials__text {
+    font-size: 18px;
+    line-height: 36px;
+    margin: 13px 0 24px 0;
   }
 }
 
