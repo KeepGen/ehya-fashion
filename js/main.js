@@ -20,9 +20,25 @@ $(document).ready(function () {
 
   $(".swiper-container").mouseleave(function () {
     mySwiper.autoplay.start();
+
   });
 });
 
+
+// Слайдер в Stories
+var mySwiper1 = new Swiper('.stories__slider', {
+  // Optional parameters
+  slideClass: "stories__slider_wrapper_slide",
+  wrapperClass: "stories__slider_wrapper",
+  nextEl: '.stories__text_buttons_right',
+  prevEl: '.stories__text_buttons_left',
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.stories__text_buttons_right',
+    prevEl: '.stories__text_buttons_left',
+  },
+});
 
 
 // Переключение табов
