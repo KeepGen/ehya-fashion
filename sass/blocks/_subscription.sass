@@ -1,0 +1,65 @@
+.subscription
+  position: relative
+  background-color: $primary-color
+  height: auto
+  &:before // ФОНОВЫЕ КРУГИ
+    content: ''
+    position: absolute
+  &:after // ФОНОВЫЕ КРУГИ
+    content: ''
+    position: absolute
+  &__wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    max-width: 1077px
+    padding: 100px  0
+    &_text
+      width: 486px
+    &_title
+      font-family: HKGrotesk-Bold
+      font-weight: 700
+      font-size: 48px
+      line-height: 125%
+      letter-spacing: 0.2px
+      color: $light
+      margin: 0
+    &_description
+      font-size: 18px
+      line-height: 178%
+      color: $light
+.subscribe
+  position: relative
+  &__input
+    padding-left: 48px
+    padding-right: 155px
+    width: 447px
+    font-size: 16px
+    line-height: 22px
+    &:focus
+      outline: none
+    &_group
+      width: 100%
+    &_icon
+      content: ''
+      position: absolute
+      width: 16px
+      height: 12px
+      top: 22px
+      bottom: 20px
+      left: 20px
+  &__button
+    position: absolute
+    font-size: 18px
+    line-height: 25px
+    font-weight: 700 
+    right: 4px
+    top: 4px
+    border: none
+    border-radius: 4px
+    background-color: $dark
+    color: $light
+    padding: 11px 24px
+    cursor: pointer
+
