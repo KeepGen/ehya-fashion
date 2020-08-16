@@ -873,17 +873,6 @@ template {
   color: #5A7184;
 }
 
-.trending__tabs_item {
-  min-width: 129px;
-}
-
-.trending__tabs:hover {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 700;
-  color: #183B56;
-}
-
 .trending__tabs_active {
   font-size: 18px;
   line-height: 25px;
@@ -1074,6 +1063,13 @@ template {
           justify-content: flex-end;
   list-style-type: none;
   margin: 0 2px 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tabs__warp {
+  width: auto;
+  margin-left: 39px;
 }
 
 .content {
@@ -1082,24 +1078,6 @@ template {
   overflow: hidden;
   padding: 0;
   margin: 0;
-}
-
-.un {
-  display: inline-block;
-}
-
-.un::after {
-  content: '';
-  width: 0px;
-  height: 1px;
-  display: block;
-  background: black;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.un:hover::after {
-  width: 100%;
 }
 
 .testimonials {
@@ -1403,10 +1381,6 @@ template {
   color: #1565D8;
 }
 
-.stories__slider_group_description_link:hover {
-  text-decoration: underline;
-}
-
 .separator {
   display: inline-block;
   width: 100%;
@@ -1603,6 +1577,19 @@ template {
   }
 }
 
+@media (min-width: 992px) {
+  .trending__tabs_item:hover {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #183B56;
+    cursor: pointer;
+  }
+  .stories__slider_group_description_link:hover {
+    text-decoration: underline;
+  }
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
@@ -1686,6 +1673,9 @@ template {
   .tabs {
     padding: 0;
   }
+  .tabs__warp {
+    margin: 0 20px;
+  }
   .trending {
     width: 90%;
   }
@@ -1700,11 +1690,6 @@ template {
   }
   .trending__texts_title {
     margin: 0 0 30px 0;
-  }
-  .trending__texts__tabs {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .trending__goods {
     margin-top: 56px;
@@ -1728,15 +1713,13 @@ template {
     width: 100%;
   }
   .trending__tabs {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .trending__tabs:hover {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #5A7184;
   }
   .separator {
     margin-bottom: 80px;
@@ -2296,20 +2279,23 @@ template {
     margin-bottom: 24px;
   }
   .trending__tabs {
+    max-width: 100%;
     font-size: 16px;
   }
-  .trending__tabs:hover {
-    font-size: 16px;
+  .trending__tabs_item {
+    max-width: 129px;
   }
   .trending__tabs_active {
     font-size: 16px;
   }
-  .trending__tabs_active:hover {
-    font-size: 16px;
-    font-weight: 700;
-    color: #183B56;
-  }
   .tabs {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+  .tabs__warp {
     margin: 0;
   }
   .testimonials__text {
@@ -2379,15 +2365,14 @@ template {
     -webkit-transform: translate(-39%, -46.7%);
             transform: translate(-39%, -46.7%);
   }
-  .tabs {
-    -ms-grid-columns: (minmax(95px, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(95px, 1fr));
-  }
   .trending__tabs {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .trending__tabs_item {
+    max-width: 129px;
   }
   .trending__tabs_active {
-    font-size: 14px;
+    font-size: 16px;
   }
   .trending__texts_title {
     font-size: 26px;
