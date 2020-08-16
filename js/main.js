@@ -32,6 +32,9 @@ var mySwiper1 = new Swiper('.stories__slider', {
   wrapperClass: "stories__slider_wrapper",
   nextEl: '.stories__text_buttons_right',
   prevEl: '.stories__text_buttons_left',
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 18,
 
   // Navigation arrows
   navigation: {
