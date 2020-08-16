@@ -1,0 +1,83 @@
+.footer
+  padding-top: 130px
+  padding-bottom: 80px
+  &__wrapper
+    &_navbar
+      display: grid
+      grid-template-columns: 263px 170px 170px 170px 170px
+      justify-items: start
+      justify-content: start
+      column-gap: 25px
+      margin-bottom: 96px
+      &_main
+        grid-column-start: 1
+        display: flex
+        justify-items: space-between
+        flex-direction: column
+      &_logo
+        &_image
+          margin-bottom: 28px
+      &_slogan
+        margin-bottom: 32px
+        height: 54px
+      &_icogroup
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        width: 185px
+      &_icon
+        background-color: #eff1f3
+        border-radius: 2000px
+        width: 40px
+        height: 40px
+        padding: 12px
+      &_product
+        grid-column-start: 2
+        align-self: start
+      &_services
+        grid-column-start: 3
+        align-self: start
+      &_company
+        grid-column-start: 4
+        align-self: start
+      &_more
+        grid-column-start: 5
+        align-self: start
+    &_copyright
+      width: 279px
+      margin: auto
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &_img
+        width: 56px
+        height: 56px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $primary-color
+        border-radius: 50%
+        margin-bottom: 24px
+        padding: 16px 16px 12px 16px
+      &_image
+        width: 100%
+        height: 100%
+  &__ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+  &__title
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    margin: 0 0 31px 0
+  &__item
+    font-size: 16px
+    line-height: 22px
+    margin: 0 0 24px 0
+  &__link
+    text-decoration: none
+    color: $dark

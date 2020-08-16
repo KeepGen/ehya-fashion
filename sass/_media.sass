@@ -51,6 +51,12 @@
     &__wrapper
       width: 972px
       margin: auto
+  .footer
+    &__wrapper
+      width: 972px
+      margin: auto
+      &_navbar
+        grid-template-columns: 233px 150px 150px 150px 150px
 
 @media (max-width: 1200px)
   .container
@@ -151,6 +157,23 @@
   .subscribe
     &__input
       width: 414px
+  .footer
+    &__wrapper
+      width: 820px
+      &_navbar
+        grid-template-columns: 270px 210px 210px
+        column-gap: 25px
+        row-gap: 25px
+        &_main
+          grid-area: 1 / 1 / 3 / 2
+        &_product
+          grid-area: 1 / 2 / 2 / 3
+        &_services
+          grid-area: 1 / 3 / 2 / 4
+        &_company
+          grid-area: 2 / 2 / 3 / 3
+        &_more
+          grid-area: 2 / 3 / 3 / 4
 
 @media (min-width: 992px) // mobiles hover on--off //
   .trending
@@ -173,6 +196,16 @@
     &__button
       &:hover
         background: #355a77
+  .footer
+    &__wrapper
+      &_navbar
+        &_icon
+          &:hover
+            background-color: #f5f9ff
+    &__link
+      &:hover
+        color: $primary-color
+        text-decoration: underline
 
 @media (max-width: 992px)
   .container
@@ -336,11 +369,19 @@
   .subscribe
     &__input
       width: 447px
+  .footer
+    &__wrapper
+      width: 90%
+      &_navbar
+        width: 641px
+        grid-template-columns: 243px 180px 180px
+        column-gap: 28px
+        row-gap: 28px
 
 @media (max-width: 870px)
   .hero
     &__wrapper
-      width: 95%
+      width: 100%
   .trending
     &__goods
       &_card
@@ -460,6 +501,17 @@
       margin: 12px 0 36px 0
     &__author
       margin-bottom: 36px
+  .footer
+    padding-top: 64px
+    padding-bottom: 64px
+    &__wrapper
+      width: 90%
+      &_navbar
+        width: 641px
+        grid-template-columns: 253px 163px 163px
+        column-gap: 30px
+        row-gap: 30px
+        margin-bottom: 62px
 
 @media (max-width: 748px)
   .navbar
@@ -511,6 +563,14 @@
     &__advantages
       &_item
         margin-right: 21px
+  .footer
+    &__wrapper
+      width: 90%
+      &_navbar
+        width: 90%
+        grid-template-columns: 40% 30% 30%
+        column-gap: 15px
+        row-gap: 15px
 
 @media (max-width: 670px)
   body
@@ -643,6 +703,33 @@
   .subscribe
     &__input
       width: 100%
+  .footer
+    &__wrapper
+      width: 90%
+      &_navbar
+        width: 100%
+        grid-template-columns: 48% 48%
+        column-gap: 15px
+        row-gap: 15px
+        &_slogan
+          margin-bottom: 16px
+          text-align: center
+        &_logo
+          &_image
+            margin-bottom: 14px
+        &_main
+          width: 100%
+          grid-area: 3 / 1 / 4 / 3
+          align-items: center
+        &_product
+          grid-area: 1 / 1 / 2 / 2
+        &_services
+          grid-area: 1 / 2 / 2 / 3
+        &_company
+          grid-area: 2 / 1 / 3 / 2
+        &_more
+          grid-area: 2 / 2 / 3 / 3
+  
 
 @media (max-width: 480px)
   .navbar
