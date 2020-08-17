@@ -105,7 +105,7 @@ if(!empty($_POST['e-mail'])){
     }
 
     // Отображение результата
-    header('location: success.php');
+    header('location: success.html');
     /* echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]); */
 } else {
     throw new Exception("Bad Request");    
