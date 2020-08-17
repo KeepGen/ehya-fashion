@@ -2954,6 +2954,10 @@ template {
   .subscription__wrapper_title {
     font-size: 35px;
   }
+  .footer__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 410px) {
