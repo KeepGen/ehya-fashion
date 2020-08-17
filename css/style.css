@@ -1076,8 +1076,17 @@ template {
 }
 
 .tabs__warp {
-  width: auto;
-  margin-left: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-width: 130px;
 }
 
 .content {
@@ -2026,9 +2035,10 @@ template {
   }
   .tabs {
     padding: 0;
+    margin-left: 10px;
   }
   .tabs__warp {
-    margin: 0 20px;
+    margin: 0 3px;
   }
   .trending {
     width: 90%;
@@ -2786,7 +2796,7 @@ template {
     font-size: 16px;
   }
   .tabs {
-    width: 100%;
+    width: 95%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2794,6 +2804,7 @@ template {
   }
   .tabs__warp {
     margin: 0;
+    min-width: 100px;
   }
   .testimonials__text {
     font-size: 18px;
@@ -2973,6 +2984,12 @@ template {
   .trending__goods_card_wrapper_bg {
     padding-top: 40px;
     padding-bottom: 29px;
+  }
+  .tabs {
+    width: 100%;
+  }
+  .tabs__warp {
+    min-width: 94px;
   }
   .stories__slider_group_picture {
     height: 270px;
