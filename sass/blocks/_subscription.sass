@@ -2,12 +2,6 @@
   position: relative
   background-color: $primary-color
   height: auto
-  &:before // ФОНОВЫЕ КРУГИ
-    content: ''
-    position: absolute
-  &:after // ФОНОВЫЕ КРУГИ
-    content: ''
-    position: absolute
   &__wrapper
     display: flex
     flex-direction: row
@@ -15,6 +9,29 @@
     justify-content: space-between
     max-width: 1077px
     padding: 100px  0
+    z-index: -2
+    &:before // ФОНОВЫЕ КРУГИ
+      content: ''
+      position: absolute
+      width: 1186px
+      height: 1186px
+      transform: translate(-65%, -33%)
+      background-image: url(../img/subscription/oval.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 110%
+      z-index: 1
+    &:after // ФОНОВЫЕ КРУГИ
+      content: ''
+      position: absolute
+      width: 1186px
+      height: 1186px
+      transform: translate(63%, 36%)
+      background-image: url(../img/subscription/oval2.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 110%
+      z-index: 1
     &_text
       width: 486px
     &_title
@@ -31,6 +48,7 @@
       color: $light
 .subscribe
   position: relative
+  z-index: 2
   &__input
     padding-left: 48px
     padding-right: 155px
@@ -62,4 +80,3 @@
     color: $light
     padding: 11px 24px
     cursor: pointer
-
