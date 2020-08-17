@@ -1410,6 +1410,7 @@ template {
   position: relative;
   background-color: #1565D8;
   height: auto;
+  overflow: hidden;
 }
 
 .subscription__wrapper {
