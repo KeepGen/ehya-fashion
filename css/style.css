@@ -42,6 +42,12 @@ input {
   height: 55px;
 }
 
+.invalid {
+  color: red;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1690,6 +1696,120 @@ template {
   color: #183B56;
 }
 
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(21, 101, 216, 0.25);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.modal__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  padding: 40px 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.modal__dialog_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__form_group {
+  min-height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #183B56;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  width: 100%;
+  border: 1px solid #183B56;
+  padding: 18px 23px;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 18px 23px;
+  border: 1px solid #183B56;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.modal__info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #183B56;
+}
+
+.modal__button {
+  width: 100%;
+  min-height: 57px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  background-color: #183B56;
+  padding: 11px 24px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 .mail {
   padding-top: 35px;
   padding-bottom: 70px;
@@ -2028,6 +2148,9 @@ template {
   .footer__link:hover {
     color: #1565D8;
     text-decoration: underline;
+  }
+  .trending__goods_card_details_cart:hover {
+    opacity: 0.39;
   }
 }
 
@@ -2600,6 +2723,10 @@ template {
   }
   .hero__advantages_item {
     margin-right: 21px;
+  }
+  .modal__dialog {
+    width: 300px;
+    padding: 35px 35px;
   }
 }
 

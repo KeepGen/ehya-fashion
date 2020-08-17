@@ -8,16 +8,14 @@ if(!empty($_POST['e-mail'])){
 
     // Переменные, которые отправляет пользователь
     $name = $_POST['name'];
-    $phone = $_POST['phone'];
     $email = $_POST['e-mail'];
     $message = $_POST['message'];
 
     // Формирование самого письма
-    $title = "Fashun Online Store - new message";
+    $title = "Fashun Online Store - new order";
     $body = "
-    <h4>You have new message from Fashun Online Store (Modal Window):</h4>
+    <h4>You have new order from Fashun Online Store (Modal Window):</h4>
     <b>Name:</b> $name<br>
-    <b>Phone:</b> $phone<br>
     <b>Email:</b> $email<br><br>
     <b>Message:</b><br>$message
     ";
